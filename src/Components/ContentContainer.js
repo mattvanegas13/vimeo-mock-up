@@ -5,8 +5,9 @@ const ContentWrapper = styled.div`
     display:flex;
     flex-direction:${props => props.Location === "Left" ? 'row':'row-reverse'};
     align-items:center;
-    height:40vh;
+    height:35vh;
     width:65vw;
+    padding-top:5vh;
 `
 
 const ImageContainer = styled.div`
@@ -24,7 +25,7 @@ const TextContainer = styled.div`
     flex-direction:column;
     height:40vh;
     width: 27vw;
-    margin-top:5%;
+    padding-top:5%;
     color:${props => props.Color};    
 `
 const ArticleText = styled.div`
