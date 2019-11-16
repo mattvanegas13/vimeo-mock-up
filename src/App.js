@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ContentContainer from './Components/ContentContainer'
 
 function App() {
+  const ImageInfo={
+    'image1-location':'Left',
+    'image1-src':'https://i.kym-cdn.com/photos/images/original/001/316/888/f81.jpeg',
+    'image1-text':'yeeeeeeee boioiii',
+    'image1-location':'Right',
+    'image1-src':'https://i.kym-cdn.com/photos/images/original/001/316/888/f81.jpeg',
+    'image1-text':'yeeeeeeee boioiii',
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
