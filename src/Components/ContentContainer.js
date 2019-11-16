@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const ContentWrapper = styled.div`
     display:flex;
     flex-direction:${props => props.Location === "Left" ? 'row':'row-reverse'};
-    align-items:center;
     height:35vh;
     width:65vw;
     padding-top:5vh;
@@ -12,12 +11,11 @@ const ContentWrapper = styled.div`
 
 const ImageContainer = styled.div`
     display:flex;
-    height:60vh;
     width:34vw;
     background-image: url('${props => props.Img}');
     background-repeat: no-repeat;
     background-position: center; 
-    background-size:80%;
+    background-size:85%;
 `
 
 const TextContainer = styled.div`
@@ -31,8 +29,8 @@ const TextContainer = styled.div`
 const ArticleText = styled.div`
 `
 
-const ContentContainer = ({Location, ImgSrc, Title, Text,Color}) => {
-    console.log(Location)
+const ContentContainer = ({Location, ImgSrc, Title, Text, Color}) => {
+    console.log(Color)
         return(
             <ContentWrapper Location={Location}>
                 <ImageContainer Img={ImgSrc} />
