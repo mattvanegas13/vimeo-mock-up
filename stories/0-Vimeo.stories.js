@@ -12,14 +12,14 @@ export const MockUp = () => <App/>;
 export const ContentComponent = ()  => (
   <>
     <ContentContainer 
-      Location="Right" 
+      Location="Left" 
       ImgSrc="https://i.vimeocdn.com/video/589972810_530x315.jpg" 
       Title="Beams"
       Color="#ffffff"
       Text={PlaceHolderText}
     />
     <ContentContainer 
-      Location="Left" 
+      Location="Right" 
       ImgSrc="https://i.vimeocdn.com/video/590587169_530x315.jpg" 
       Title="Move 2"
       Color="#ffffff"
