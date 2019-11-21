@@ -1,32 +1,36 @@
 import React from 'react';
 import App from '../src/App';
 import ContentContainer from '../src/Components/ContentContainer';
+import LandingPage from '../src/Components/LandingPage'
+import Content from '../src/Content/content'
 
 export default {
   title: 'Vimeo Mock Up',
 };
 
-const PlaceHolderText = "Lorem ipsum dolor sit amet, consectetur adipscing elit. Donec tinicidunt ipsum augue. In faucibus vehicula magna pulvinar aliquam. Cras aliquam feugiat lorem non auctor. Quisque sed lorem egestas mauris venenatis commodo eu id nibh. Ut porta libero sed semper faucibus.";
+
+
 export const MockUp = () => <App/>;
 
 export const ContentComponent = ()  => (
   <>
     <ContentContainer 
-      Location="Left" 
-      ImgSrc="https://i.vimeocdn.com/video/589972810_530x315.jpg" 
-      Title="Beams"
-      Color="#ffffff"
-      Text={PlaceHolderText}
+      Location={Content.Locations[1]}
+      ImgSrc={Content.Images[1]}
+      Title={Content.Titles[1]}
+      Color="black"
+      Text={Content.PlaceHolderText}
     />
     <ContentContainer 
-      Location="Right" 
-      ImgSrc="https://i.vimeocdn.com/video/590587169_530x315.jpg" 
-      Title="Move 2"
-      Color="#ffffff"
-      Text={PlaceHolderText}
+      Location={Content.Locations[2]}
+      ImgSrc={Content.Images[2]}
+      Title={Content.Titles[2]}
+      Color="black"
+      Text={Content.PlaceHolderText}
     />
   </>
   );
+export const Landing = () => <LandingPage LandingPageText={Content.PlaceHolderText}/>
 
 
 MockUp.story = {
@@ -34,4 +38,7 @@ MockUp.story = {
 };
 ContentComponent.story ={
   name: 'Content Container'
+}
+Landing.story ={
+  name: 'Landing Page'
 }

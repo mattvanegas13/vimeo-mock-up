@@ -34,8 +34,9 @@ const ImageContainer = styled.div`
     background-position: center; 
     background-size:490px;
     @media only screen and (max-width:992px){
-        width:60vw;
+        width:70vw;
         height:48vh;
+        background-size:100%;
     }
 `
 
@@ -47,13 +48,13 @@ const TextContainer = styled.div`
     width: 500px;
     padding-top:5%;  
     padding-left:12px;
-    color:${props => props.Color};
     @media only screen and (max-width:992px){
         height:20vh;
-        width:600px;
+        width:75vw;
     }
 `
 const ArticleText = styled.div`
+
     margin-top:-3%;
 `
 
