@@ -46,15 +46,15 @@ const TextContainer = styled.div`
     align-content:center;
     height:250px;
     width: 500px;
-    padding-top:5%;  
+    padding-top:6%;  
     padding-left:12px;
+    color: ${props => props.TextColor};
     @media only screen and (max-width:992px){
         height:20vh;
         width:75vw;
     }
 `
 const ArticleText = styled.div`
-
     margin-top:-3%;
 `
 

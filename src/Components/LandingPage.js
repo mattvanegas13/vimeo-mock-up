@@ -11,15 +11,15 @@ const LandingPageWrapper = styled.div`
     align-items:center;
 `
 
-const LandingPage = ({LandingPageText}) => {
+const LandingPage = ({LandingPageContent}) => {
         return(
             <LandingPageWrapper>
                     <ContentContainer 
-                        Location="Left" 
-                        ImgSrc="https://i.vimeocdn.com/video/595198868_505x160.jpg" 
-                        Title="Beams"
-                        Color="black"
-                        Text={LandingPageText}
+                        Location={LandingPageContent.Locations[0]}
+                        ImgSrc={LandingPageContent.Images[0]}
+                        Title={LandingPageContent.Titles[0]}
+                        Color={LandingPageContent.Color[0]}
+                        Text={LandingPageContent.PlaceHolderText}
                     />
             </LandingPageWrapper>
         );
