@@ -1,9 +1,10 @@
 import React from 'react';
 import App from '../src/App';
 import ContentContainer from '../src/Components/ContentContainer';
-import LandingPage from '../src/Components/LandingPage'
-import Content from '../src/Content/content'
-import SecondPage from '../src/Components/SecondPage'
+import LandingPage from '../src/Components/LandingPage';
+import Content from '../src/Content/content';
+import SecondPage from '../src/Components/SecondPage';
+import Slide from '../src/Components/CarouselSlide';
 
 export default {
   title: 'Vimeo Mock Up',
@@ -12,6 +13,8 @@ export default {
 
 
 export const MockUp = () => <App/>;
+
+export const CarouselSlide = () => <Slide SlideContent={Content.Slides.Slide1}/>
 
 export const ContentComponent = ()  => (
   <>
@@ -42,6 +45,7 @@ MockUp.story = {
 ContentComponent.story = {
   name: 'Content Container'
 };
+
 Landing.story = {
   name: 'Landing Page'
 };

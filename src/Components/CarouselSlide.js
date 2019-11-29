@@ -6,6 +6,7 @@ const SlideWrapper = styled.div`
     flex-direction:row;
     width:50vw;
     height:40vh;
+    padding-top:7vh;
     z-index:2;
 `
 const MasterWrapper = styled.div`
@@ -36,8 +37,8 @@ const BackgroundImage = styled.div`
 const BackGroundOverlay = styled.div`
     position:absolute;
     background-color:rgba(50,50,50,.80);
-    width:75vw;
-    height:50vh;
+    width:100vw;
+    height:65vh;
     z-index:1;
 `
 
@@ -61,7 +62,8 @@ const SlideImage = styled.div`
 const ButtonWrapper = styled.div`
     display:flex;
     flex-direction:row;
-    width:40vw;
+    justify-content:space-between;
+    width:14vw;
     padding-top:3vh;
 `
 
