@@ -3,6 +3,15 @@
     "Titles":["Monsoon III","Beams","Move 2"],
     "Color": ["black","white","white"],
     "PlaceHolderText":"Lorem ipsum dolor sit amet, consectetur adipscing elit. Donec tinicidunt ipsum augue. In faucibus vehicula magna pulvinar aliquam. Cras aliquam feugiat lorem non auctor. Quisque sed lorem egestas mauris venenatis commodo eu id nibh. Ut porta libero sed semper faucibus.",
-    "Locations":["Right","Left","Right"]
+    "Locations":["Right","Left","Right"],
+    "Slides":{
+        "Slide1":{
+            "OverlayColor":"black",
+            "rgb":[0,0,0],
+            "Title":"Full Moon",
+            "Summary":"Be inspired by women who push boundaries. FULL MOON showcases the legends, current icons and future prodigies of this ever-evolving lifestyle sport",
+            "Image":"https://musicimage.xboxlive.com/catalog/video.movie.8D6KGX0RV3GC/image?locale=en-us&mode=crop&purposes=BoxArt&q=90&h=300&w=200&format=jpg"
+        }
+    }
     
 }
