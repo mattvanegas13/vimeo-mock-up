@@ -78,26 +78,27 @@ const BuyNowButton = styled.button`
   align-items:center;
   justify-content:space-evenly;
   font-weight:bold;
-  margin: 1em;
-  padding: 0.25em 1em;
+  margin:20px;
   color:white;
   background-color:${props => props.ButtonColor};
   border-color:${props => props.ButtonColor};
-  border-radius: 3px;
-  width:135px;
+  border-radius: 5px;
+  border-width:1px;
+  width:300px;
   height:45px;
 
 `
 const WatchTrailer = styled.button`
   font-size: 1em;
   font-weight:bold;
+  margin-top:20px;
   color:white;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border-color:gray;
+  border:solid;
+  border-width:1px;
+  border-color:${props => props.ButtonColor};
   background-color:transparent;
-  border-radius: 3px;
-  width:138px;
+  border-radius: 5px;
+  width:300px;
   height:45px;
 `
 
@@ -135,7 +136,7 @@ const Slide = ({SlideContent}) => {
                         <BuyNowButton ButtonColor={SlideContent.ButtonColor}> 
                         <Hexagon ButtonColor={SlideContent.ButtonColor}/> <div>Buy Now</div>
                     </BuyNowButton>
-                        <WatchTrailer>Watch Trailer</WatchTrailer>
+                        <WatchTrailer ButtonColor={SlideContent.ButtonColor}>Watch Trailer</WatchTrailer>
                     </ButtonWrapper>
                 </SlideTextWrapper>
         </SlideWrapper>

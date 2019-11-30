@@ -11,8 +11,8 @@ const HexagonTop = styled.div`
     border-right: 12px solid transparent;
 `
 const HexagonBody = styled.div`
-    width: 22px;
-    height: 10px;
+    width: 23px;
+    height: 11px;
     background-color: white;
 `
 const HexagonBottom = styled.div`
@@ -25,7 +25,7 @@ const HexagonBottom = styled.div`
 const PlayButton = styled.div`
     position:relative;
     z-index:2;
-    margin-left:7px;
+    margin-left:8px;
     width: 0; 
     height: 0; 
     border-top: 6px solid transparent;
