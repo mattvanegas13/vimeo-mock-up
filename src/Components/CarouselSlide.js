@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Hexagon from '../Components/HexagonPlay';
 
 const SlideWrapper = styled.div`
     display:flex;
@@ -9,13 +10,13 @@ const SlideWrapper = styled.div`
     padding-top:7vh;
     z-index:2;
 `
+
 const MasterWrapper = styled.div`
     display:flex;
     flex-direction:row;
     justify-content:space-around;
     align-items:center;
 `
-
 
 const BackgroundImage = styled.div`
     display:flex;
@@ -47,7 +48,7 @@ const Overlay = styled.div`
     height:40vh;
     z-index:2;
     position: absolute;
-    background-image: linear-gradient(to bottom,transparent,transparent,transparent,transparent,transparent,transparent,rgba(90,90,90,1));
+    background-image: linear-gradient(to bottom,transparent,transparent,transparent,transparent,rgba(90,90,90,1));
 `
 
 const SlideImage = styled.div`
@@ -63,15 +64,39 @@ const ButtonWrapper = styled.div`
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    width:14vw;
-    padding-top:3vh;
+    width:18vw;
+    padding-top:2vh;
+    margin-left:-1vw;
 `
 
 const BuyNowButton = styled.button`
+  font-size: 1em;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-evenly;
+  font-weight:bold;
+  margin: 1em;
+  padding: 0.25em 1em;
+  color:white;
+  background-color:gray;
+  border-color:gray;
+  border-radius: 3px;
+  width:135px;
+  height:40px;
 
 `
 const WatchTrailer = styled.button`
-
+  font-size: 1em;
+  font-weight:bold;
+  color:white;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border-color:gray;
+  background-color:transparent;
+  border-radius: 3px;
+  width:138px;
+  height:40px;
 `
 
 const SlideTextWrapper = styled.div`
@@ -79,6 +104,7 @@ const SlideTextWrapper = styled.div`
     flex-direction:column;
     height:40vh;
     width: 35vw;
+    padding-top:3vh;
     color: white;
     @media only screen and (max-width:992px){
         height:20vh;
@@ -104,7 +130,7 @@ const Slide = ({SlideContent}) => {
                     <h2> {SlideContent.Title}</h2>
                     <ArticleText>{SlideContent.Summary}</ArticleText>
                     <ButtonWrapper>
-                        <BuyNowButton>Buy Now</BuyNowButton>
+                        <BuyNowButton> <Hexagon ButtonColor='#64C7CC'/> <div>Buy Now</div></BuyNowButton>
                         <WatchTrailer>Watch Trailer</WatchTrailer>
                     </ButtonWrapper>
                 </SlideTextWrapper>

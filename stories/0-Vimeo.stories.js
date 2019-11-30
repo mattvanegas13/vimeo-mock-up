@@ -5,12 +5,21 @@ import LandingPage from '../src/Components/LandingPage';
 import Content from '../src/Content/content';
 import SecondPage from '../src/Components/SecondPage';
 import Slide from '../src/Components/CarouselSlide';
+import Next from '../src/Components/Arrow';
+import Hexagon from '../src/Components/HexagonPlay'
 
 export default {
   title: 'Vimeo Mock Up',
 };
 
 
+export const Hex = () => <Hexagon ButtonColor='#64C7CC' />
+// export const Navigation = () => (
+//   <>
+//   <Next/>
+//   <Next Left/>
+//   </>
+// )
 
 export const MockUp = () => <App/>;
 
