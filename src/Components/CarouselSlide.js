@@ -37,7 +37,8 @@ const BackgroundImage = styled.div`
 `
 const BackGroundOverlay = styled.div`
     position:absolute;
-    background-color:rgba(50,50,50,.80);
+    background-color:${props => props.OverlayColor};
+    opacity:.80;
     width:100vw;
     height:65vh;
     z-index:1;
@@ -48,16 +49,17 @@ const Overlay = styled.div`
     height:40vh;
     z-index:2;
     position: absolute;
-    background-image: linear-gradient(to bottom,transparent,transparent,transparent,transparent,rgba(90,90,90,1));
+    background-image: linear-gradient(190deg,transparent,transparent,transparent,rgba(${props => props.RGBA}));
 `
 
 const SlideImage = styled.div`
     display:flex;
     height:40vh;
-    width:20vw;
+    width:15vw;
     background-image: url('${props => props.Img}');
     background-repeat: no-repeat;
     background-position: center;
+    background-size:80%;
 `
 
 const ButtonWrapper = styled.div`
@@ -79,11 +81,11 @@ const BuyNowButton = styled.button`
   margin: 1em;
   padding: 0.25em 1em;
   color:white;
-  background-color:gray;
-  border-color:gray;
+  background-color:${props => props.ButtonColor};
+  border-color:${props => props.ButtonColor};
   border-radius: 3px;
   width:135px;
-  height:40px;
+  height:45px;
 
 `
 const WatchTrailer = styled.button`
@@ -96,7 +98,7 @@ const WatchTrailer = styled.button`
   background-color:transparent;
   border-radius: 3px;
   width:138px;
-  height:40px;
+  height:45px;
 `
 
 const SlideTextWrapper = styled.div`
@@ -121,16 +123,18 @@ const Slide = ({SlideContent}) => {
         <>
         <MasterWrapper>
         <BackgroundImage Img={SlideContent.Image}/>
-        <BackGroundOverlay/>
+        <BackGroundOverlay OverlayColor={SlideContent.OverlayColor}/>
         
         <SlideWrapper>
-                <Overlay/>
+                <Overlay RGBA={SlideContent.rgba}/>
                 <SlideImage Img={SlideContent.Image}/>
                 <SlideTextWrapper>
                     <h2> {SlideContent.Title}</h2>
                     <ArticleText>{SlideContent.Summary}</ArticleText>
                     <ButtonWrapper>
-                        <BuyNowButton> <Hexagon ButtonColor='#64C7CC'/> <div>Buy Now</div></BuyNowButton>
+                        <BuyNowButton ButtonColor={SlideContent.ButtonColor}> 
+                        <Hexagon ButtonColor={SlideContent.ButtonColor}/> <div>Buy Now</div>
+                    </BuyNowButton>
                         <WatchTrailer>Watch Trailer</WatchTrailer>
                     </ButtonWrapper>
                 </SlideTextWrapper>
