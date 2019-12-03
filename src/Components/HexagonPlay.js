@@ -34,7 +34,6 @@ const PlayButton = styled.div`
 `
 
 const Hexagon = ({ButtonColor}) =>{
-    console.log(ButtonColor)
     return(
         <HexagonWrapper>
             <HexagonTop/>

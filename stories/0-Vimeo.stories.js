@@ -15,7 +15,7 @@ export default {
 
 export const Hex = () => <Hexagon ButtonColor='#64C7CC' />;
 
-export const CarouselComp = () => <Carousel/>;
+export const CarouselComp = () => <Carousel content={Content.Slides}/>;
 
 export const MockUp = () => <App/>;
 

@@ -9,6 +9,9 @@ const SlideWrapper = styled.div`
     height:40vh;
     padding-top:7vh;
     z-index:2;
+    @media only screen and (max-width:992px){
+
+    }
 `
 
 const MasterWrapper = styled.div`
@@ -16,6 +19,12 @@ const MasterWrapper = styled.div`
     flex-direction:row;
     justify-content:space-around;
     align-items:center;
+    /* position:absolute;
+    top:0;
+    left:25vw; */
+    @media only screen and (max-width:992px){
+
+    }
 `
 
 const BackgroundImage = styled.div`
@@ -33,6 +42,9 @@ const BackgroundImage = styled.div`
     background-position: center;
     background-size:95%;
     z-index:-1;
+    @media only screen and (max-width:992px){
+
+    }
 
 `
 const BackGroundOverlay = styled.div`
@@ -42,6 +54,9 @@ const BackGroundOverlay = styled.div`
     width:100vw;
     height:65vh;
     z-index:1;
+    @media only screen and (max-width:992px){
+
+    }
 `
 
 const Overlay = styled.div`
@@ -60,6 +75,9 @@ const SlideImage = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size:80%;
+    @media only screen and (max-width:992px){
+
+    }
 `
 
 const ButtonWrapper = styled.div`
@@ -69,6 +87,9 @@ const ButtonWrapper = styled.div`
     width:18vw;
     padding-top:2vh;
     margin-left:-1vw;
+    @media only screen and (max-width:992px){
+
+   }
 `
 
 const BuyNowButton = styled.button`
@@ -86,7 +107,9 @@ const BuyNowButton = styled.button`
   border-width:1px;
   width:300px;
   height:45px;
+  @media only screen and (max-width:992px){
 
+  } 
 `
 const WatchTrailer = styled.button`
   font-size: 1em;
@@ -100,6 +123,10 @@ const WatchTrailer = styled.button`
   border-radius: 5px;
   width:300px;
   height:45px;
+  @media only screen and (max-width:992px){
+
+  }
+
 `
 
 const SlideTextWrapper = styled.div`
@@ -107,11 +134,10 @@ const SlideTextWrapper = styled.div`
     flex-direction:column;
     height:40vh;
     width: 35vw;
-    padding-top:3vh;
+    padding-top:5vh;
     color: white;
     @media only screen and (max-width:992px){
-        height:20vh;
-        width:75vw;
+
     }
 `
 
@@ -119,7 +145,7 @@ const ArticleText = styled.div`
     margin-top:-1%;
 `
 
-const Slide = ({SlideContent}) => {
+const CarouselSlide = ({SlideContent}) => {
         return(
         <>
         <MasterWrapper>
@@ -147,4 +173,4 @@ const Slide = ({SlideContent}) => {
 
 
 
-export default Slide;
+export default CarouselSlide;

@@ -1,0 +1,14 @@
+.slides-enter {
+    transform: translate(100%);
+  }
+  .slides-enter.slides-enter-active {
+    transform: translate(0%);
+    transition: transform 500ms ease-in-out;
+  }
+  .slides-leave {
+    transform: translate(0%);
+  }
+  .slides-leave.slides-leave-active {
+    transform: translate(-100%);
+    transition: transform 500ms ease-in-out;
+  }
