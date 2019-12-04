@@ -8,6 +8,10 @@ const CarouselWrapper = styled.div`
     height:400px;
     width:100vw;
     position:absolute;
+    @media only screen and (max-width:992px){
+        width:100vw;
+        height:100vh;
+    }
 `
 const Navigation = styled.div`
     height:60px;
@@ -38,6 +42,11 @@ const NavigationWrapper = styled.div`
     margin-top:20vh;
     position: absolute;
     top:0;
+    @media only screen and (max-width:992px){
+        width:98vw;
+        padding-left:0vw;
+        
+    }
 `
 const ArrowWrapper = styled.div`
     position:absolute;
@@ -54,7 +63,9 @@ const ArrowWrapper = styled.div`
     visibility: ${props => props.isActive ? "visible": "hidden"};
 `
 const ButtonStyle = {
-    border:'none'
+    border:'transparent',
+    background:'transparent',
+    backgroundColor:'transparent'
 }
 
 export default class Carousel extends React.Component{
@@ -114,13 +125,16 @@ export default class Carousel extends React.Component{
         const {
             isLeftActive,LeftLastChosen,
             isRightActive,RightLastChosen
-        } = this.state
+        } = this.state;
+
+        let isMobile = window.innerWidth < 992 ? true : false;
 
         return(
             <CarouselWrapper>
                 <CarouselProvider
+                    dragEnabled
                     naturalSlideWidth={100}
-                    naturalSlideHeight={100}
+                    naturalSlideHeight={isMobile ? 160 : 100}
                     totalSlides={this.props.content.length}
                 >
                     <Slider>
@@ -128,6 +142,7 @@ export default class Carousel extends React.Component{
                             <Slide index={i}><CarouselSlide SlideContent={slide}/></Slide>
                         ))}
                     </Slider>  
+
                     <NavigationWrapper>
                         <Navigation>
                             <ButtonBack style={ButtonStyle}>
@@ -142,6 +157,7 @@ export default class Carousel extends React.Component{
                                 <Arrow Right wasLastChosen ={RightLastChosen} onClick={() => this.handleArrowClick("Right")}/>
                             </ButtonNext>
                         </Navigation> 
+
                     </NavigationWrapper>                 
                 </CarouselProvider>
 

@@ -25,7 +25,6 @@ const PositionWrapper = styled.div`
         height:70vh;
     }
 `
-
 const ImageContainer = styled.div`
     width:525px;
     height:300px;
@@ -39,7 +38,6 @@ const ImageContainer = styled.div`
         background-size:100%;
     }
 `
-
 const TextContainer = styled.div`
     display:flex;
     flex-direction:column;

@@ -12,14 +12,13 @@ export default {
   title: 'Vimeo Mock Up',
 };
 
-
 export const Hex = () => <Hexagon ButtonColor='#64C7CC' />;
 
 export const CarouselComp = () => <Carousel content={Content.Slides}/>;
 
 export const MockUp = () => <App/>;
 
-export const CarouselSlide = () => <Slide SlideContent={Content.Slides[4]}/>
+export const CarouselSlide = () => <Slide SlideContent={Content.Slides[3]}/>;
 
 export const ContentComponent = ()  => (
   <>
@@ -39,9 +38,9 @@ export const ContentComponent = ()  => (
     />
   </>
   );
-export const Landing = () => <LandingPage LandingPageContent={Content}/>
+export const Landing = () => <LandingPage LandingPageContent={Content}/>;
 
-export const SecondPg = () => <SecondPage SecondPageContent={Content}/>
+export const SecondPg = () => <SecondPage SecondPageContent={Content}/>;
 
 
 MockUp.story = {
@@ -50,7 +49,6 @@ MockUp.story = {
 ContentComponent.story = {
   name: 'Content Container'
 };
-
 Landing.story = {
   name: 'Landing Page'
 };
