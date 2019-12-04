@@ -74,6 +74,7 @@ export default class Carousel extends React.Component{
     constructor(props){
         super(props)
         this.state = {
+            isMobile:window.innerWidth < 992 ? true : false,
             timeOutRef:0,
             setTimeout:0,
             isLeftActive:false,
@@ -125,11 +126,10 @@ export default class Carousel extends React.Component{
 
     render(){
         const {
+            isMobile,
             isLeftActive,LeftLastChosen,
             isRightActive,RightLastChosen
         } = this.state;
-
-        let isMobile = window.innerWidth < 992 ? true : false;
 
         return(
             <CarouselWrapper>
