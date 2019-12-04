@@ -169,9 +169,3 @@ export default class Carousel extends React.Component{
         );
     }
 }
-
-
-
-
-
-
