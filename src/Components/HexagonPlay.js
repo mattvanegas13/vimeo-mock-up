@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 const HexagonWrapper = styled.div`
 `
-
 const HexagonTop = styled.div`
     width: 0;
     border-bottom: 7px solid white;
@@ -21,7 +20,6 @@ const HexagonBottom = styled.div`
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
 `
-
 const PlayButton = styled.div`
     position:relative;
     z-index:2;
@@ -32,7 +30,6 @@ const PlayButton = styled.div`
     border-bottom: 6px solid transparent;
     border-left: 10px solid ${props => props.Color};
 `
-
 const Hexagon = ({ButtonColor}) =>{
     return(
         <HexagonWrapper>

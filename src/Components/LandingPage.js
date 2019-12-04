@@ -10,7 +10,6 @@ const LandingPageWrapper = styled.div`
     align-content:center;
     align-items:center;
 `
-
 const LandingPage = ({LandingPageContent}) => {
         return(
             <LandingPageWrapper>

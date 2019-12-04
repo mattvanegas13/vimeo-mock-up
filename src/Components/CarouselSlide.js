@@ -23,8 +23,6 @@ const MasterWrapper = styled.div`
     flex-direction:row;
     justify-content:space-around;
     align-items:center;
-    @media only screen and (max-width:992px){
-    }
 `
 const BackgroundImage = styled.div`
     display:flex;
@@ -109,9 +107,6 @@ const BuyNowButton = styled.button`
     border-width:1px;
     width:300px;
     height:45px;
-    @media only screen and (max-width:992px){
-        
-    } 
 `
 const WatchTrailer = styled.button`
     font-size: 1em;
@@ -125,10 +120,6 @@ const WatchTrailer = styled.button`
     border-radius: 5px;
     width:300px;
     height:45px;
-    @media only screen and (max-width:992px){
-
-    }
-
 `
 const SlideTextWrapper = styled.div`
     display:flex;
@@ -151,7 +142,6 @@ const ArticleText = styled.div`
 `
 const CarouselSlide = ({SlideContent}) => {
         return(
-        <>
         <MasterWrapper>
         <BackgroundImage Img={SlideContent.Image}/>
         <BackGroundOverlay OverlayColor={SlideContent.OverlayColor}/>
@@ -170,7 +160,6 @@ const CarouselSlide = ({SlideContent}) => {
                 </SlideTextWrapper>
         </SlideWrapper>
         </MasterWrapper>
-        </>
         );
 }
 

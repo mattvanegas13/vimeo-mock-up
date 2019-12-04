@@ -21,9 +21,6 @@ const PositionWrapper = styled.div`
     justify-content:center;
     width:100vw;
     height:auto;
-    @media only screen and (max-width:992px){
-        
-    }
 `
 const ImageContainer = styled.div`
     width:525px;
@@ -57,7 +54,6 @@ const TextContainer = styled.div`
 const ArticleText = styled.div`
     margin-top:-3%;
 `
-
 const ContentContainer = ({Location, ImgSrc, Title, Text, Color,Landing}) => {
         return(
             <PositionWrapper>

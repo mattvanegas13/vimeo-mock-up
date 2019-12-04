@@ -47,7 +47,6 @@ const NavigationWrapper = styled.div`
         width:98vw;
         padding-left:0vw;
         padding-top:20vh;
-        
     }
 `
 const ArrowWrapper = styled.div`
@@ -74,9 +73,9 @@ export default class Carousel extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            isMobile:window.innerWidth < 992 ? true : false,
             timeOutRef:0,
             setTimeout:0,
+            isMobile:window.innerWidth < 992 ? true : false,
             isLeftActive:false,
             LeftLastChosen:false,
             isRightActive:false,
@@ -103,8 +102,8 @@ export default class Carousel extends React.Component{
     }
     
 
-    handleArrowClick = (ArrowClicked) => {;
-        if(ArrowClicked ==="Left"){
+    handleArrowClick = (ArrowClicked) => {
+        if(ArrowClicked === "Left" ) {
             this.setState({
                 LeftLastChosen:true,
                 isLeftActive:true,
@@ -134,10 +133,9 @@ export default class Carousel extends React.Component{
         return(
             <CarouselWrapper>
                 <CarouselProvider
-                    style={{overflow:'visible'}}
                     dragEnabled
                     naturalSlideWidth={100}
-                    naturalSlideHeight={isMobile ? 250 : 100}
+                    naturalSlideHeight={isMobile ? 300 : 100}
                     totalSlides={this.props.content.length}
                 >
                     <Slider>
@@ -163,7 +161,6 @@ export default class Carousel extends React.Component{
 
                     </NavigationWrapper>                 
                 </CarouselProvider>
-
             </CarouselWrapper>
             
         );

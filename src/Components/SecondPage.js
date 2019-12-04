@@ -13,7 +13,6 @@ const SecondPageWrapper = styled.div`
         height:135vh;
     }
 `
-
 const SecondPage = ({SecondPageContent}) => {
         return(
             <SecondPageWrapper>
