@@ -33,9 +33,9 @@ const ImageContainer = styled.div`
     background-position: center; 
     background-size:490px;
     @media only screen and (max-width:992px){
-        width:80vw;
-        height:48vh;
-        background-size:60vw;
+        width:55%;
+        height:70vh;
+        background-size:75%;
     }
 `
 const TextContainer = styled.div`

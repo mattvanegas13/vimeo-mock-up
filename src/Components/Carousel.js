@@ -46,6 +46,7 @@ const NavigationWrapper = styled.div`
     @media only screen and (max-width:992px){
         width:98vw;
         padding-left:0vw;
+        padding-top:20vh;
         
     }
 `
@@ -133,9 +134,10 @@ export default class Carousel extends React.Component{
         return(
             <CarouselWrapper>
                 <CarouselProvider
+                    style={{overflow:'visible'}}
                     dragEnabled
                     naturalSlideWidth={100}
-                    naturalSlideHeight={isMobile ? 160 : 100}
+                    naturalSlideHeight={isMobile ? 190 : 100}
                     totalSlides={this.props.content.length}
                 >
                     <Slider>

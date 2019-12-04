@@ -15,7 +15,7 @@ const SlideWrapper = styled.div`
         justify-items:center;
         align-items:center;
         height:100vh;
-        padding-top:0vh;
+        padding-top:5vh;
     }
 `
 const MasterWrapper = styled.div`
