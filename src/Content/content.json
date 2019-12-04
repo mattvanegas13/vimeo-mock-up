@@ -3,6 +3,47 @@
     "Titles":["Monsoon III","Beams","Move 2"],
     "Color": ["black","white","white"],
     "PlaceHolderText":"Lorem ipsum dolor sit amet, consectetur adipscing elit. Donec tinicidunt ipsum augue. In faucibus vehicula magna pulvinar aliquam. Cras aliquam feugiat lorem non auctor. Quisque sed lorem egestas mauris venenatis commodo eu id nibh. Ut porta libero sed semper faucibus.",
-    "Locations":["Right","Left","Right"]
-    
+    "Locations":["Right","Left","Right"],
+    "Slides":[
+        {
+            "OverlayColor":"#333131",
+            "ButtonColor":"#858585",
+            "rgba":"90,90,90,1",
+            "Title":"Full Moon",
+            "Summary":"Be inspired by women who push boundaries. FULL MOON showcases the legends, current icons and future prodigies of this ever-evolving lifestyle sport",
+            "Image":"https://musicimage.xboxlive.com/catalog/video.movie.8D6KGX0RV3GC/image?locale=en-us&mode=crop&purposes=BoxArt&q=90&h=300&w=200&format=jpg"
+        },
+        {
+            "OverlayColor":"#324f66",
+            "ButtonColor":"#4684b8",
+            "rgba":"50, 79, 102,1",
+            "Title":"Hunt for the Wilderpeople",
+            "Summary":"Raised on hip-hop and foster care, defiant city kid Ricy gets a fres start in the New Zealand countryside. From the director of What We Do in the The Shadows.",
+            "Image":"https://m.media-amazon.com/images/M/MV5BMjI1MDQ2MDg5Ml5BMl5BanBnXkFtZTgwMjc2NjM5ODE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+        },
+        {
+            "OverlayColor":"#324f66",
+            "ButtonColor":"#4684b8",
+            "rgba":"80, 109, 132,1",
+            "Title":"Nichts passiert / A Decent Man",
+            "Summary":"A Swiss family takes a ski vacation and runs into trouble when the father, a titular decent man, finds himself in a series of moral quandries",
+            "Image":"https://upload.wikimedia.org/wikipedia/commons/3/3f/Nichtspassiertplakat_CC.jpg" 
+        },
+        {
+            "OverlayColor":"#3d3b14",
+            "ButtonColor":"#ada742",
+            "rgba":"61,59,20,1",
+            "Title":"Vice Versa",
+            "Summary":"Come along with the Good Company crew as they travel throughout the US,Japan,BC, and Quebec to showcase skiing in the best way possible",
+            "Image":"https://images-na.ssl-images-amazon.com/images/I/71eoNKrLrQL._RI_.jpg"
+        },
+        {
+            "OverlayColor":"#324f66",
+            "ButtonColor":"#4684b8",
+            "rgba":"50, 79, 102,1",
+            "Title":"The Fourth Phase",
+            "Summary":"From the creators of The Art of FLIGHT, Red Bull Media House presents THE FOURTH PHASE, a snoboarding epic starring iconic athelete Travis Rice.",
+            "Image":"https://m.media-amazon.com/images/M/MV5BOGVhNjUwYTItYmI2NS00ZGI1LWE5ZDQtMWVjMTIyODAzMDI4XkEyXkFqcGdeQXVyMjQ3NzUxOTM@._V1_UY268_CR3,0,182,268_AL_.jpg" 
+        }
+    ]    
 }

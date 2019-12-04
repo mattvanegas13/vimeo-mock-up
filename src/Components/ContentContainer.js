@@ -5,14 +5,14 @@ const ContentWrapper = styled.div`
     display:flex;
     flex-direction:${props => props.Location === "Left" ? 'row':'row-reverse'};
     height:300px;
-    padding-top:2%;
+    padding-top:2vh;
     width:1000px;
     @media only screen and (max-width:992px){
         display:flex;
         flex-direction:column;
         align-items:center;
         width: 100vw;
-        height:600px;
+        height:400px;
     }
 `
 const PositionWrapper = styled.div`
@@ -22,10 +22,9 @@ const PositionWrapper = styled.div`
     width:100vw;
     height:auto;
     @media only screen and (max-width:992px){
-        height:70vh;
+        
     }
 `
-
 const ImageContainer = styled.div`
     width:525px;
     height:300px;
@@ -34,12 +33,11 @@ const ImageContainer = styled.div`
     background-position: center; 
     background-size:490px;
     @media only screen and (max-width:992px){
-        width:70vw;
-        height:48vh;
-        background-size:100%;
+        width:55%;
+        height:70vh;
+        background-size:75%;
     }
 `
-
 const TextContainer = styled.div`
     display:flex;
     flex-direction:column;
@@ -50,7 +48,7 @@ const TextContainer = styled.div`
     padding-left:12px;
     color: ${props => props.TextColor};
     @media only screen and (max-width:992px){
-        height:20vh;
+        height:50vh;
         width:75vw;
     }
 `

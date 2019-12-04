@@ -1,17 +1,24 @@
 import React from 'react';
 import App from '../src/App';
 import ContentContainer from '../src/Components/ContentContainer';
-import LandingPage from '../src/Components/LandingPage'
-import Content from '../src/Content/content'
-import SecondPage from '../src/Components/SecondPage'
+import LandingPage from '../src/Components/LandingPage';
+import Content from '../src/Content/content';
+import SecondPage from '../src/Components/SecondPage';
+import Slide from '../src/Components/CarouselSlide';
+import Hexagon from '../src/Components/HexagonPlay';
+import Carousel from '../src/Components/Carousel';
 
 export default {
   title: 'Vimeo Mock Up',
 };
 
+export const Hex = () => <Hexagon ButtonColor='#64C7CC' />;
 
+export const CarouselComp = () => <Carousel content={Content.Slides}/>;
 
 export const MockUp = () => <App/>;
+
+export const CarouselSlide = () => <Slide SlideContent={Content.Slides[3]}/>;
 
 export const ContentComponent = ()  => (
   <>
@@ -31,9 +38,9 @@ export const ContentComponent = ()  => (
     />
   </>
   );
-export const Landing = () => <LandingPage LandingPageContent={Content}/>
+export const Landing = () => <LandingPage LandingPageContent={Content}/>;
 
-export const SecondPg = () => <SecondPage SecondPageContent={Content}/>
+export const SecondPg = () => <SecondPage SecondPageContent={Content}/>;
 
 
 MockUp.story = {

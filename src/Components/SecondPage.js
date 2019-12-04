@@ -9,6 +9,9 @@ const SecondPageWrapper = styled.div`
     height:115vh;
     align-content:center;
     background-image: linear-gradient( rgba(0,0,0,1), rgba(0,0,0,0));
+    @media only screen and (max-width:992px){
+        height:135vh;
+    }
 `
 
 const SecondPage = ({SecondPageContent}) => {
