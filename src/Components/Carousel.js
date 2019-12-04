@@ -137,7 +137,7 @@ export default class Carousel extends React.Component{
                     style={{overflow:'visible'}}
                     dragEnabled
                     naturalSlideWidth={100}
-                    naturalSlideHeight={isMobile ? 250 : 100}
+                    naturalSlideHeight={isMobile ? 300 : 100}
                     totalSlides={this.props.content.length}
                 >
                     <Slider>
