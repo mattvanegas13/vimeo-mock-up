@@ -175,15 +175,3 @@ export default class Carousel extends React.Component{
 
 
 
-
-
-               {/* <Navigation>
-                    <ArrowWrapper isActive={isLeftActive}/>
-                    <Arrow wasLastChosen={LeftLastChosen} onClick={() => this.handleArrowClick("Left")}/>
-                </Navigation>
-
-                
-                <Navigation>
-                    <ArrowWrapper isActive={isRightActive}/>
-                    <Arrow Right wasLastChosen ={RightLastChosen} onClick={() => this.handleArrowClick("Right")}/>
-                </Navigation> */}

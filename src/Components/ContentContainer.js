@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import LandingPage from './LandingPage';
 
 const ContentWrapper = styled.div`
     display:flex;
