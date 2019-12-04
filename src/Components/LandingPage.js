@@ -6,7 +6,7 @@ const LandingPageWrapper = styled.div`
     display:flex;
     flex-direction:row;
     width:100vw;
-    height:40vh;
+    height:50vh;
     align-content:center;
     align-items:center;
 `
@@ -15,6 +15,7 @@ const LandingPage = ({LandingPageContent}) => {
         return(
             <LandingPageWrapper>
                     <ContentContainer 
+                        Landing={true}
                         Location={LandingPageContent.Locations[0]}
                         ImgSrc={LandingPageContent.Images[0]}
                         Title={LandingPageContent.Titles[0]}

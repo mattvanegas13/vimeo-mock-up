@@ -10,7 +10,7 @@ const App = () => {
   <>
     <LandingPage LandingPageContent={Content}/>
     <SecondPage SecondPageContent={Content}/>
-    <Carousel content={Content.Slides}/>
+    {/* <Carousel content={Content.Slides}/> */}
   </>
   );
 }
