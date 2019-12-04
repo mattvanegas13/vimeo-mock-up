@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import LandingPage from './LandingPage';
 
 const ContentWrapper = styled.div`
     display:flex;
@@ -12,7 +13,7 @@ const ContentWrapper = styled.div`
         flex-direction:column;
         align-items:center;
         width: 100vw;
-        height:400px;
+        height:450px;
     }
 `
 const PositionWrapper = styled.div`
@@ -33,9 +34,10 @@ const ImageContainer = styled.div`
     background-position: center; 
     background-size:490px;
     @media only screen and (max-width:992px){
-        width:55%;
-        height:70vh;
-        background-size:75%;
+        width:90%;
+        height:80vh;
+        background-size:50%;
+        margin-bottom: ${props => props.isLanding ? '50px': '0px'};
     }
 `
 const TextContainer = styled.div`
@@ -50,6 +52,7 @@ const TextContainer = styled.div`
     @media only screen and (max-width:992px){
         height:50vh;
         width:75vw;
+        padding-top:10%;
     }
 `
 const ArticleText = styled.div`
