@@ -7,10 +7,11 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 const CarouselWrapper = styled.div`
     height:400px;
     width:100vw;
-    position:absolute;
+    position:relative;
     @media only screen and (max-width:992px){
         width:100vw;
         height:100vh;
+        padding-top:15vh;
     }
 `
 const Navigation = styled.div`

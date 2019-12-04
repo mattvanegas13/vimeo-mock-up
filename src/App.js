@@ -1,20 +1,20 @@
 import React from 'react';
+import LandingPage from '../src/Components/LandingPage';
+import SecondPage from '../src/Components/SecondPage';
+import Carousel from '../src/Components/Carousel';
+import Content from '../src/Content/content';
 import './App.css';
-import ContentContainer from './Components/ContentContainer'
 
-
-export default class App extends React.Component{
-  constructor(props){
-    super(props);
-    this.state={};
-  }
-
-  makeCall = () =>{
-
-  }
-
-  render(){
-    this.makeCall()
-    return(<div>hello</div>)
-  }
+const App = () => {
+  return(
+  <>
+    <LandingPage LandingPageContent={Content}/>
+    <SecondPage SecondPageContent={Content}/>
+    <Carousel content={Content.Slides}/>
+  </>
+  );
 }
+
+
+
+export default App;

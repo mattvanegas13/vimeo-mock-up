@@ -6,7 +6,7 @@ const LandingPageWrapper = styled.div`
     display:flex;
     flex-direction:row;
     width:100vw;
-    height:40vh;
+    height:60vh;
     align-content:center;
     align-items:center;
 `
